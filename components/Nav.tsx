@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Nav = () => {
   const loggedIn = false;
@@ -8,7 +9,7 @@ const Nav = () => {
     <header className="w-full relative z-10">
       <nav className=" bg-gray-100 max-w-[1440px] flex justify-between p-3 px-8 items-center">
         <div className="flex justify-between gap-8 items-center">
-          logo
+          <Link href="/">logo</Link>
           <Image
             className="ml-20 absolute object-contain"
             src="/search.svg"
@@ -46,12 +47,17 @@ const Nav = () => {
             </>
           ) : (
             <div className="flex justify-between gap-6 items-center">
-              <div className="bg-black text-white p-2 px-8 rounded-sm cursor-pointer border-2">
-                Sign Up
-              </div>
-              <div className="p-2 px-8 rounded-sm border-2 border-gray-600 cursor-pointer">
-                Sign In
-              </div>
+              <Link href="/user/signUp">
+                <div className="bg-black text-white p-2 px-8 rounded-sm cursor-pointer border-2">
+                  Sign Up
+                </div>
+              </Link>
+
+              <Link href="/user/signIn">
+                <div className="p-2 px-8 rounded-sm border-2 border-gray-600 cursor-pointer">
+                  Sign In
+                </div>
+              </Link>
             </div>
           )}
         </div>
