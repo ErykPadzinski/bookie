@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import "../../styles/register.css";
 const page = () => {
   return (
     <div className="register-page flex justify-between min-h-screen">

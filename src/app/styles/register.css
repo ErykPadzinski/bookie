@@ -1,0 +1,57 @@
+.register-page {
+  height: 100vh;
+}
+
+.register-label {
+  display: flex;
+  width: 35vw;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+  font-size: larger;
+  color: gray;
+}
+
+.register-img {
+  object-fit: cover;
+}
+
+.register-form {
+  gap: 20px;
+  margin: 5rem 0;
+}
+
+.register-header {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.register-input {
+  outline: none;
+}
+
+.register-btn {
+  font-size: 2.3rem;
+  background-color: #c7aa2c;
+  background-image: linear-gradient(132deg, #c7aa2c 0%, #29b597 100%);
+  font-weight: 500;
+  color: whitesmoke;
+  padding: 0.2rem 13rem;
+  border-radius: 2rem;
+}
+
+.remember-checkbox {
+  color: gray;
+  margin-right: 5px;
+}
+
+.login-reg-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-right: 50rem;
+  align-items: start;
+}
+
+.login-reg-nav > p {
+  color: gray;
+}
