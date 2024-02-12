@@ -7,7 +7,7 @@ const Nav = () => {
 
   return (
     <header className="w-full relative z-10">
-      <nav className=" bg-gray-100 max-w-[1440px] flex justify-between p-3 px-8 items-center">
+      <nav className=" bg-gray-100 flex justify-between p-3 px-8 items-center">
         <div className="flex justify-between gap-8 items-center">
           <Link href="/">logo</Link>
           <Image
