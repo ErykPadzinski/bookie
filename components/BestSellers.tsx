@@ -10,8 +10,6 @@ const BestSellers = () => {
         <Book />
         <Book />
         <Book />
-        <Book />
-        <Book />
       </div>
     </div>
   );

@@ -1,8 +1,11 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import DropDownCategory from "./DropDownCategory";
 
 const Nav = () => {
+  const [dropdown, setDropdown] = useState(false);
   const loggedIn = false;
 
   return (
@@ -25,11 +28,19 @@ const Nav = () => {
         </div>
         <div className="flex justify-between gap-5 items-center">
           <ul className="flex justify-between gap-8 mr-10">
-            <li>Home</li>
-            <li>Popular</li>
-            <li>Category</li>
-            <li>Bestseller</li>
-            <li>Blog</li>
+            <li className="cursor-pointer">Home</li>
+            <li className="cursor-pointer">Popular</li>
+            <div>
+              <li
+                className="cursor-pointer"
+                onClick={() => setDropdown(!dropdown)}
+              >
+                Category
+              </li>
+              {dropdown && <DropDownCategory />}
+            </div>
+            <li className="cursor-pointer">Bestseller</li>
+            <li className="cursor-pointer">Blog</li>
           </ul>
 
           {loggedIn ? (
